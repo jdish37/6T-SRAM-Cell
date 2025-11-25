@@ -12,6 +12,23 @@ Key aspects covered:
 
 ---
 
+# Index
+
+- [Project Overview](#project-overview)
+- [Design of 6T SRAM Circuit Using Cadence Virtuoso](#design-of-6t-sram-circuit-using-cadence-virtuoso)
+- [Pre-Charge Circuit](#pre-charge-circuit)
+- [Sense Amplifier](#sense-amplifier)
+- [Write '0' Operation](#write-0-operation)
+- [Write '1' Operation](#write-1-operation)
+- [Read '1' Operation](#read-1-operation)
+- [Read '0' Operation](#read-0-operation)
+- [Stability of SRAM Cell](#stability-of-sram-cell)
+  - [Hold State Butterfly Analysis](#hold-state-butterfly-analysis)
+  - [Read State Butterfly Analysis](#read-state-butterfly-analysis)
+- [Conclusion](#conclusion)
+
+---
+
 # Design of 6T SRAM Circuit Using Cadence Virtuoso
 
 The 6T SRAM cell is designed using the gpdk180 (180 nm Generic PDK) library in Cadence Virtuoso. The design process begins with creating the transistor-level schematic using gpdk180 NMOS and PMOS devices, followed by proper sizing to meet write ability, read stability, and hold robustness requirements. The bit-cell consists of two cross-coupled CMOS inverters acting as the storage element and two NMOS access transistors controlled by the Word Line (WL) to interface with the Bit Lines (BL and BLB).
